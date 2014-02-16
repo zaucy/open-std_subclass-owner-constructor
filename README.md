@@ -37,3 +37,5 @@ obj.subObj.giveOwnerMessage();
 SubObject subObj = obj.SubObject{};
 subObj.giveOwnerMessage();
 ```
+
+Another idea rather than having the owner's member's inside the sub class's scope is to access them with their type name. So instead of doing `recieveMessage(10);` in the above example you'd type `Object::recieveMessage(10);`. Only issue I see with that is the ambiguity with static functions. That, however could probably be solved with `static_cast`.
