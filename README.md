@@ -63,7 +63,8 @@ BaseObject::SubObject() {
   /* ... */
 }
 
-class DerivedObject {
+class DerivedObject
+  : public BaseObject {
 public:
   
   // Optionally define SubObject deriving from BaseObject::SubObject
